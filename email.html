@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Orçamento - Serralheria do Pedrinho</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 40px;
+    color: #222;
+    background-color: #fff;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #333; /* Azul escuro */
+    border-bottom: 3px solid #003366;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+  }
+  .section {
+    margin-bottom: 25px;
+  }
+  .label {
+    font-weight: 600;
+    color: #333; /* Azul escuro */
+    min-width: 120px;
+    display: inline-block;
+  }
+  .info-line {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .descricao {
+    background: #f0f4f8; /* Cinza claro suave */
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333; /* Azul escuro */
+  }
+  .footer {
+    margin-top: 60px;
+    font-size: 12px;
+    color: #333;
+    border-top: 1px solid #ccc;
+    padding-top: 12px;
+    letter-spacing: 0.02em;
+  }
+</style>
+
+</head>
+<body>
+
+  <h2>FOLHA DE ORÇAMENTO</h2>
+
+  <div class="section">
+    <div class="info-line"><span class="label">Nome:</span> ${nome}</div>
+    <div class="info-line"><span class="label">CPF:</span> ${cpf}</div>
+    <div class="info-line"><span class="label">Endereço:</span> ${logradouro}, Nº ${numero} – ${bairro} – ${cidade}/${uf} – CEP: ${cep}</div>
+    <div class="info-line"><span class="label">Complemento:</span> ${complemento}</div>
+    <div class="info-line"><span class="label">Email:</span> ${emailCliente}</div>
+    <div class="info-line"><span class="label">Telefone:</span> ${telefone} | WhatsApp: ${whatsapp}</div>
+  </div>
+
+  <div class="section">
+    <div class="label">Descrição do Pedido:</div>
+    <div class="descricao">${descricao}</div>
+  </div>
+
+  <div class="section" style="font-size:14px; color:#333;">
+    <strong>Data:</strong> ${dataFormat}
+  </div>
+
+  <div class="footer">
+    Serralheria do Pedrinho – Avenida 1 JG, Nº414 – Jardim Guanabara 2 – Rio Claro – SP<br>
+    CEP: 13502-430 | (19) 99636-6467 | serralheriadopedrinho@gmail.com<br>
+    www.serralheriadopedrinho.com.br
+  </div>
+
+</body>
+</html>
+`;
